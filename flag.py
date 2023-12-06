@@ -19,3 +19,10 @@ def move_next():
     forward(10)
     left(90)
     pendown()
+
+def stripe(color1, color2, width, height):
+    for _ in range(7):
+        colored_rectangle(color1, width, height)
+        move_next()
+        colored_rectangle(color2, width, height)
+        move_next()
